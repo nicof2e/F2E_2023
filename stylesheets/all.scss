@@ -58,6 +58,8 @@ body{
     margin: 0 auto;
 }
 
+
+
 /*導覽列logo*/
 .brand{
     display: flex;
@@ -669,6 +671,10 @@ footer{
     --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-white-rgb),var(--bs-bg-opacity))!important;
     border: 0!important;
+}
+
+.modal-header{
+    border-bottom: none !important;
 }
 
 .PolicyIssues_Modal_Wrapper{

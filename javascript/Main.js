@@ -23,7 +23,9 @@ const Main = Vue.createApp({
             PolicyIssues_Content_Title3:'',
             PolicyIssues_Content_Text3:'',
             PolicyIssues_Modal_Side_Img:'',
+            PolicyIssues_Modal_Side_Img2:'',
             PolicyIssues_Modal_Side_Intro:'',
+            PolicyIssues_Modal_Side_Intro2:'',
             PolicyIssues_Modal_Variable: '', //點擊最新活動要帶的變數
             PolicyIssues_Modal_Variable2: '',
         }
@@ -31,14 +33,11 @@ const Main = Vue.createApp({
     methods: {
         EntryLoading: function () {
             var $this = this;
-            $("#Index").addClass('d-none');
+            setTimeout(() => {
+                $("#Index").addClass('d-none');
                 $("#Main_Content").removeClass('d-none');
                 $("#Main_Content").addClass('d-block');
-            // setTimeout(() => {
-            //     $("#Index").addClass('d-none');
-            //     $("#Main_Content").removeClass('d-none');
-            //     $("#Main_Content").addClass('d-block');
-            //   }, "7000");
+              }, "3000");
         },
 
         OpenLatestEventsNews: function(type){
