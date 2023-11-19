@@ -37,6 +37,8 @@ const Main = Vue.createApp({
                 $("#Index").addClass('d-none');
                 $("#Main_Content").removeClass('d-none');
                 $("#Main_Content").addClass('d-block');
+                $("#countdown").removeClass('d-none');
+                $("#countdown").addClass('d-block');
               }, "3000");
         },
 
